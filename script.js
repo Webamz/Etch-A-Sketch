@@ -16,7 +16,7 @@ function populateBoard(size) {
 
     for (let i = 0; i < size ** 2; i++) {
         let square = document.createElement('div');
-        square.style.backgroundColor = '';
+        square.style.backgroundColor = 'gray';
         square.classList.add('square')
         board.insertAdjacentElement('beforeend', square)
         square.addEventListener('mouseover', colorSquare)
